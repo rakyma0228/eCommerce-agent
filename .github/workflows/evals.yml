@@ -189,7 +189,7 @@ jobs:
 
       - name: Upload eval results
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: eval-results-replay-regression
           path: |
@@ -356,7 +356,7 @@ jobs:
 
       - name: Upload records and scorecard
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: eval-results-live
           path: |
